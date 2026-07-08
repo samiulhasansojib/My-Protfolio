@@ -133,3 +133,167 @@ cursor: pointer;
     color: #757575;
     font-size:10px 10px;
 }
+
+
+
+body{
+    background-color: #F5F5F5;
+}
+
+
+.resume{
+    width: 80%;
+    max-width: 1140px;
+    margin:100px auto;
+}
+
+
+.resume h2{
+    text-align: center;
+    font-size: 30px;
+    color: #181818;
+    margin-bottom: 40px;
+}
+
+.resume-container{
+ display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.education,
+.experience{
+    flex: 1;
+}
+
+.education h3,
+.experience h3{
+   margin-bottom:20px;
+   font-size:30px;
+   color: #474747;
+}
+
+.item{
+    margin: 30px 0;
+}
+
+.item h4{
+    font-size: 24px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.item h5{
+    font-size: 20px;
+    color: #757575;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.item p{
+    font-size: 16px;
+    color: #757575;
+    line-height: 28px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background: #D1D1D1;
+}
+
+/* border */
+
+.resume button{
+    display: block;
+    margin: 50px auto 0;
+    padding:10px 25px;
+    background: #FD6E0A;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.resume button:hover{
+    background: #e45b00;
+}
+/* Amazing */
+
+.my-amazing-parent {
+  text-align: center;
+}
+.gallery {
+  margin-top: 30px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six";
+}
+.gallery img {
+  height:100%;
+  width: 100%;
+  object-fit:cover;
+}
+.box-1 {
+  grid-area: one;
+}
+.box-2 {
+  grid-area: two;
+}
+.box-3 {
+  grid-area: three;
+}
+.box-4 {
+  grid-area: four;
+}
+.box-5 {
+  grid-area: five;
+}
+.box-6 {
+  grid-area: six;
+}
+/* amazing end */
+
+/* footer start */
+ footer{
+    text-align: center;
+    margin-top:100px ! important; 
+ display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    background-color: #fff8f3;
+    padding:100px;
+    
+ }
+.footer-left .footer-right {
+  flex: 1;
+ }
+ .footer-left p{
+     margin:10px 30px;
+    line-height:28px;
+    color:#757575;
+ }
+ .footer-left img{
+    margin-right:15px;
+}
+
+footer input,
+footer textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border: none;
+    border-radius:5px;
+}
+
+footer textarea{
+    height:150px;
+}
